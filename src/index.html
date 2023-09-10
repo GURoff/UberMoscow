@@ -1,80 +1,232 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Bootstrap demo</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <!-- Connect fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
       rel="stylesheet"
-      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
-      crossorigin="anonymous"
     />
+    <!-- Connect styles -->
+    <link rel="stylesheet" href="css/bootstrap-reboot.min.css" />
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css" />
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+    <!-- Header of website -->
+    <header>
+      <nav>
+        <div class="container">
+          <!--===== Header - Navigation menu =====-->
+          <ul class="menu">
+            <li class="menu_item">
+              <a href="#" class="menu_link">Home</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
+            <li class="menu_item">
+              <a href="#" class="menu_link">With your own car</a>
             </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Dropdown
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider" /></li>
-                <li>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </li>
-              </ul>
+            <li class="menu_item">
+              <a href="#" class="menu_link">By company car</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+            <li class="menu_item">
+              <a href="#" class="menu_link">Requirements</a>
+            </li>
+            <li class="menu_item">
+              <a href="#" class="menu_link">Contacts</a>
+            </li>
+            <li class="menu_item">
+              <a href="#" class="menu_link">Request</a>
             </li>
           </ul>
-          <form class="d-flex" role="search">
-            <input
-              class="form-control me-2"
-              type="search"
-              placeholder="Search"
-              aria-label="Search"
-            />
-            <button class="btn btn-outline-success" type="submit">
-              Search
-            </button>
-          </form>
+        </div>
+      </nav>
+      <!--===== Subheader =====-->
+      <div class="subheader">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4 offset-md-1">
+              <a href="#" class="subheader_logo"
+                ><img src="icons/Uber.png" alt="logo_uber"
+              /></a>
+              <div class="subheader_official">
+                Official partner of Uber in Moscow
+              </div>
+            </div>
+            <div class="col-md-2 offset-md-2">
+              <div class="subheader_call">Call us daily</div>
+              <a href="tel:+420xxxxxxxxx" class="subheader_phone"
+                >+420 xxx-xxx-xxx</a
+              >
+            </div>
+            <div class="col-md-2">
+              <button class="subheader_btn">Request a call</button>
+            </div>
+          </div>
         </div>
       </div>
-    </nav>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
-      crossorigin="anonymous"
-    ></script>
+    </header>
+    <!--===== First section =====-->
+    <section class="promo">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-10 offset-md-1">
+            <h1 class="promo_header">UBER PARTNERS COMPANY!</h1>
+            <h2 class="promo_subheader">WE INVITE DRIVERS! IN YOUR CAR!</h2>
+            <div class="promo_descr">
+              UBER is a dynamically developing company. The company occupies a
+              leading position among taxi companies on the market. The company
+              is absolutely transparent; you can control all processes in your
+              personal account. Bonus system. In addition to completed work on
+              orders, the company awards bonuses during off-peak hours.
+              <br /><br />
+              We are one of the partners and have established ourselves as one
+              of the best teams in the city of Moscow. Our drivers earn from
+              80,000-120,000 per month.
+            </div>
+            <button class="promo_btn">SEND YOUR REQUEST!</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--===== Second section =====-->
+    <section class="reasons">
+      <div class="container">
+        <button class="reasons_btn">
+          <div class="reasons_btn_descr">advantages</div>
+        </button>
+        <h2 class="reasons_header">8 reasons to start working with us</h2>
+        <div class="row">
+          <!-- first collumn -->
+          <div class="col-md-6">
+            <div class="reasons_block">
+              <div class="reasons_round">
+                <img src="icons/wallet_Rectangle.png" alt="wallet_logo" />
+              </div>
+              <div class="reasons_descr">
+                <div class="reasons_subtitle">
+                  No cash, payment is automatic
+                </div>
+                <div class="reasons_text">
+                  The cost of the trip is paid by the passenger from a linked
+                  bank card, i.e. there are no risks associated with the
+                  transportation of cash for both the passenger and the driver;
+                  you do not need to look for small change for change.
+                </div>
+              </div>
+            </div>
+            <div class="reasons_block">
+              <div class="reasons_round">
+                <img src="icons/money_Rectangle.png" alt="money_logo" />
+              </div>
+              <div class="reasons_descr">
+                <div class="reasons_subtitle">
+                  High income with guaranteed payments
+                </div>
+                <div class="reasons_text">
+                  We pay wages to the driver’s personal bank card! You do not
+                  need to register an LLC, individual entrepreneur, pay taxes,
+                  file a declaration, pay for accounting services and maintain a
+                  bank account.
+                </div>
+              </div>
+            </div>
+            <div class="reasons_block">
+              <div class="reasons_round">
+                <img src="icons/keys_Rectangle.png" alt="keys_logo" />
+              </div>
+              <div class="reasons_descr">
+                <div class="reasons_subtitle">
+                  Comfortable, transparent and easy connection
+                </div>
+                <div class="reasons_text">
+                  We connect remotely and for free, you do not need to come to
+                  us! You send us copies of documents, we register you and send
+                  you connection information, in 1-2 days you can start working!
+                </div>
+              </div>
+            </div>
+            <div class="reasons_block">
+              <div class="reasons_round">
+                <img src="icons/call_Rectangle.png" alt="call_logo" />
+              </div>
+              <div class="reasons_descr">
+                <div class="reasons_subtitle">24/7 support</div>
+                <div class="reasons_text">
+                  Uber offers 24/7 driver support via email. If something is not
+                  clear, you can always ask a question via On-line consultation.
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- second collumn -->
+          <div class="col-6 col-md-6">
+            <div class="reasons_block">
+              <div class="reasons_round">
+                <img src="icons/table_Rectangle.png" alt="table_logo" />
+              </div>
+              <div class="reasons_descr">
+                <div class="reasons_subtitle">Commission 8% + BONUSES</div>
+                <div class="reasons_text">
+                  We have a minimum commission and pay bonuses for each trip;
+                  some of our competitors keep bonuses for themselves. We work
+                  honestly and with us drivers earn more!
+                </div>
+              </div>
+            </div>
+            <div class="reasons_block">
+              <div class="reasons_round">
+                <img src="icons/kalendar_Rectangle.png" alt="kalendar_logo" />
+              </div>
+              <div class="reasons_descr">
+                <div class="reasons_subtitle">
+                  Work at a convenient time, no schedules
+                </div>
+                <div class="reasons_text">
+                  You simply press the exit line button to start working, when
+                  you decide to finish, press exit the line. You can only work
+                  part-time in the morning, evening, weekends or holidays!
+                </div>
+              </div>
+            </div>
+            <div class="reasons_block">
+              <div class="reasons_round">
+                <img src="icons/map_Rectangle.png" alt="map_logo" />
+              </div>
+              <div class="reasons_descr">
+                <div class="reasons_subtitle">
+                  Always a large number of orders
+                </div>
+                <div class="reasons_text">
+                  The application shows where there are currently the most
+                  orders and where higher rates apply. You will not have
+                  downtime and idle runs. Our passengers are always pleasant and
+                  absolutely non-conflict people who are a pleasure to carry.
+                </div>
+              </div>
+            </div>
+            <div class="reasons_block">
+              <div class="reasons_round">
+                <img src="icons/map_Rectangle.png" alt="map_logo" />
+              </div>
+              <div class="reasons_descr">
+                <div class="reasons_subtitle">
+                  Without checkers and stickers
+                </div>
+                <div class="reasons_text">
+                  You don't need to change the color, install checkers on your
+                  car or cover it with stickers.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--===== Third section =====-->
   </body>
 </html>
