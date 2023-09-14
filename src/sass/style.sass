@@ -1,4 +1,9 @@
-/* =====Main section=====
+// ===== Colors =====
+$color_red: #FF5656
+$color_blue: #1EACC7
+$color_white: #FFFFFF
+
+// =====Main section=====
 
 *
     font-family: 'Roboto', sans-serif
@@ -84,7 +89,7 @@ a
     font-weight: 400
     text-transform: uppercase
 
-/* =====First section=====
+/* ===== First section - Uber partners company =====
 
 .promo
     min-height: 800px
@@ -134,46 +139,13 @@ a
     font-weight: 400
     text-transform: uppercase
 
-/* =====Second section=====
+/* ===== Second section - Eight reasons =====
 
 .reasons
     min-height: 767px
     background: #FFF
     padding: 18px 0 64px 0
-
-.reasons_btn
-    display: block
-    margin: 20px auto 33px auto
-    width: 115px
-    height: 27px
-    background-color: #000
-
-.reasons_btn_descr
-    flex-direction: column
-    justify-content: center
-    flex-shrink: 0
-    color: #FFF
-    text-align: center
-    font-size: 11px
-    font-weight: 400
-    text-transform: uppercase
-
-.title
-    margin-top: 33px
-    margin-bottom: 0px
-    color: #222
-    font-size: 38px
-    font-weight: 700
-    text-transform: uppercase
-    text-align: center
-
-.reasons_block
-    display: flex
-    justify-content: center
-    align-items: center
-    margin-top: 26px
-
-    .reasons_round
+    &_round
         display: flex
         justify-content: center
         align-items: center
@@ -182,30 +154,135 @@ a
         height: 116px
         border-radius: 100%
         background: #1EACC7
-
-    .reasons_subtitle
+    &_block
+        display: flex
+        justify-content: center
+        align-items: center
+        margin-top: 26px
+    &_subtitle
         line-height: 21px
         color: #1eacc7
         font-size: 17px
         font-weight: 400
-
-    .reasons_descr
+    &_descr
         width: 371px
-
-    .reasons_text
+    &_text
         font-size: 15px
         font-weight: 300
         line-height: 21px
+.label
+    position: relative
+    margin: 0 auto
+    height: 24px
+    width: 112px
+    padding: 5px 12px
+    background-color: #000000
+    color: #ffffff
+    font-size: 11px
+    font-weight: 300
+    text-transform: uppercase
+    text-align: center
+    z-index: 2
+    cursor: pointer
+    &_white
+        background-color: #fff
+        color: #000
 
-.mobile
-    height: 864px
-    padding: 48px 0 80px 0
-    background: url('../img/bg/mobile_bg.png')
+.title
+    position: relative
+    margin-bottom: 0
+    margin-top: 38px
+    color: #222222
+    font-size: 38px
+    line-height: 38px
+    font-weight: 700
+    text-transform: uppercase
+    text-align: center
+    z-index: 2
+    &_white
+        color: #fff
 
 .subtitle
+    position: relative
     margin-top: 19px
-    width: 825px
     color: #222222
-    text-align: center
     font-size: 17px
     font-weight: 400
+    text-align: center
+    z-index: 2
+    &_white
+        color: #fff
+
+/* ===== Third section - Uber Mobile App =====
+.mobile
+    min-height: 864px
+    padding: 48px 0 80px 0
+    background: url('../img/bg/mobile_bg.png') center (center / cover) no-repeat
+    .row
+        margin-top: 30px
+    &_item
+        position: relative
+        width: 320px
+        height: 280px
+        margin: 0 auto
+        margin-bottom: 19px
+        &_1
+            background: url(../img/cards/card1.png), lightgray 50% / cover no-repeat
+        &_2
+            background: url(../img/cards/card2.png), lightgray 50% / cover no-repeat
+        &_3
+            background: url(../img/cards/card3.png), lightgray 50% / cover no-repeat
+        &_4
+            background: url(../img/cards/card4.png), lightgray 50% / cover no-repeat
+        &_5
+            background: url(../img/cards/card5.png), lightgray 50% / cover no-repeat
+        &_6
+            background: url(../img/cards/card6.png), lightgray 50% / cover no-repeat
+        &_subtitle
+            padding-top: 88px
+            color: #ffffff
+            text-align: center
+            font-size: 24px
+            font-weight: 400
+            line-height: 31px
+            text-transform: uppercase
+        &_plus
+            display: flex
+            justify-content: center
+            align-items: center
+            position: absolute
+            bottom: 35px
+            left: 50%
+            transform: translateX(-50%)
+            width: 29px
+            height: 29px
+            margin: 0 auto
+            border-radius: 100%
+            background-color: #000000
+            cursor: pointer
+
+/* ===== Fourth section - Choice is a great thing! =====
+.choice
+    position: relative
+    min-height: 895px
+    padding: 59px 0 138px 0
+    background: url('../img/bg/mobile_bg.png') center (center / cover) no-repeat
+    &_img
+        position: relative
+        display: block
+        margin: 56px auto 0 auto
+        z-index: 2
+    &_descr
+        text-align: center
+        color: #222222
+        font-size: 17px
+        font-weight: 300
+        line-height: 24px
+    &_black
+        position: absolute
+        top: 0
+        left: 0
+        height: 499px
+        width: 100%
+        background-color: #070716
+        z-index: 1
