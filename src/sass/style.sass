@@ -1,7 +1,11 @@
 // ===== Colors =====
-$color_red: #FF5656
-$color_blue: #1EACC7
-$color_white: #FFFFFF
+$main-color: #1eacc7
+$red-color: #ff5656
+// ===== Mixins =====
+=btn_hover
+    &:hover
+        background-image: none
+        background-color: $main-color
 
 // =====Main section=====
 
@@ -26,17 +30,15 @@ a
     padding: 15px 40px 15px 71px
     margin: 0
     list-style-type: none
-
-.menu_link
-    color: #FFF
-    font-size: 15px
-    font-weight: 300
-
-.menu_item
-    border-right: 1px dashed #000
-    background: rgba(0, 0, 0, 0)
-    mix-blend-mode: soft-light
-    padding-right: 28px
+    &_link
+        color: #FFF
+        font-size: 15px
+        font-weight: 300
+    &_item
+        border-right: 1px dashed #000
+        background: rgba(0, 0, 0, 0)
+        mix-blend-mode: soft-light
+        padding-right: 28px
 
 /* =====Subheader section=====
 
@@ -45,49 +47,45 @@ a
     width: 100%
     height: 87px
     background-color: rgba(0, 0, 0, 0.6)
-
-.subheader_logo
-    display: block
-    max-width: 100%
-    margin-top: 16px
-
-.subheader_official
-    margin-top: 6px
-    color: #FFF
-    font-size: 13px
-    font-weight: 100
-
-.subheader_call
-    margin-top: 19px
-    color: #FFF
-    text-align: right
-    font-size: 12px
-    font-weight: 300
-
-.subheader_phone
-    display: block
-    margin-top: 8px
-    color: #FFF
-    text-align: right
-    font-size: 22px
-    font-weight: 400
-    line-height: 12px
-    text-transform: uppercase
-
-.subheader_btn
-    margin-top: 18px
-    width: 172px
-    height: 46px
-    border: none
-    border-radius: 4px
-    background: linear-gradient(0deg, #1EACC7 0%, #4CE2FF 100%)
-    box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.12) inset
-    color: #FFF
-    text-align: center
-    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21)
-    font-size: 14px
-    font-weight: 400
-    text-transform: uppercase
+    &_logo
+        display: block
+        max-width: 100%
+        margin-top: 16px
+    &_official
+        margin-top: 6px
+        color: #FFF
+        font-size: 13px
+        font-weight: 100
+    &_call
+        margin-top: 19px
+        color: #FFF
+        text-align: right
+        font-size: 12px
+        font-weight: 300
+    &_phone
+        display: block
+        margin-top: 8px
+        color: #FFF
+        text-align: right
+        font-size: 22px
+        font-weight: 400
+        line-height: 12px
+        text-transform: uppercase
+    &_btn
+        margin-top: 18px
+        width: 172px
+        height: 46px
+        border: none
+        border-radius: 4px
+        background: linear-gradient(0deg, #1EACC7 0%, #4CE2FF 100%)
+        box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.12) inset
+        color: #FFF
+        text-align: center
+        text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21)
+        font-size: 14px
+        font-weight: 400
+        text-transform: uppercase
+        +btn_hover
 
 /* ===== First section - Uber partners company =====
 
@@ -95,49 +93,46 @@ a
     min-height: 800px
     background: url('../img/bg/uber_bg.png') center (center / cover) no-repeat
     padding: 155px 0 185px 0
-
-.promo_header
-    margin: 0
-    color: #FFF
-    text-align: center
-    font-size: 60px
-    font-weight: 900
-    text-transform: uppercase
-    line-height: 60px
-
-.promo_subheader
-    margin: 0
-    margin-top: 22px
-    color: #FFF
-    text-align: center
-    font-size: 36px
-    font-weight: 900
-    text-transform: uppercase
-    line-height: 36px
-
-.promo_descr
-    margin-top: 16px
-    color: #FFF
-    text-align: center
-    font-size: 18px
-    font-weight: 400
-    line-height: 24px
-
-.promo_btn
-    display: block
-    margin: 115px auto 0 auto
-    width: 259px
-    height: 63px
-    border: none
-    border-radius: 4px
-    background: linear-gradient(0deg, #1EACC7 0%, #4CE2FF 100%)
-    box-shadow: 0px -4px 0px 0px rgba(0, 0, 0, 0.12) inset
-    color: #FFF
-    text-align: center
-    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21)
-    font-size: 18px
-    font-weight: 400
-    text-transform: uppercase
+    &_header
+        margin: 0
+        color: #FFF
+        text-align: center
+        font-size: 60px
+        font-weight: 900
+        text-transform: uppercase
+        line-height: 60px
+    &_subheader
+        margin: 0
+        margin-top: 22px
+        color: #FFF
+        text-align: center
+        font-size: 36px
+        font-weight: 900
+        text-transform: uppercase
+        line-height: 36px
+    &_descr
+        margin-top: 16px
+        color: #FFF
+        text-align: center
+        font-size: 18px
+        font-weight: 400
+        line-height: 24px
+    &_btn
+        display: block
+        margin: 115px auto 0 auto
+        width: 259px
+        height: 63px
+        border: none
+        border-radius: 4px
+        background: linear-gradient(0deg, #1EACC7 0%, #4CE2FF 100%)
+        box-shadow: 0px -4px 0px 0px rgba(0, 0, 0, 0.12) inset
+        color: #FFF
+        text-align: center
+        text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21)
+        font-size: 18px
+        font-weight: 400
+        text-transform: uppercase
+        +btn_hover
 
 /* ===== Second section - Eight reasons =====
 
@@ -260,6 +255,26 @@ a
             border-radius: 100%
             background-color: #000000
             cursor: pointer
+            &:before
+                content: ''
+                display: block
+                width: 14px
+                height: 2px
+                background-color: $main-color
+                transition: 0.3s all
+            &:after
+                content: ''
+                position: absolute
+                left: 50%
+                transform: translateX(-50%)
+                display: block
+                height: 14px
+                width: 2px
+                background-color: $main-color
+                transition: 0.3s all
+            &:hover
+                &:before, &:after
+                    background-color: $red-color
 
 /* ===== Fourth section - Choice is a great thing! =====
 .choice
@@ -286,3 +301,48 @@ a
         width: 100%
         background-color: #070716
         z-index: 1
+
+//===== Fifth section - Conditions and requirements =====
+.require
+    padding: 68px 0 90px 0
+    &_block
+        margin: 33px 0
+        &_nmb
+            margin-bottom: 0px
+    &_title
+        color: #1CA8C3
+        font-size: 22px
+        font-weight: 400
+    &_list
+        list-style-type: none
+        padding-left: 50px
+        margin-top: 22px
+        li
+            position: relative
+            font-size: 17px
+            font-weight: 300
+            line-height: 24px
+            margin-bottom: 10px
+            &::before
+                content: ''
+                display: block
+                position: absolute
+                left: -32px
+                top: 3px
+                width: 21px
+                height: 20px
+                background: url('../icons/checkMarkblue.svg') center (center / cover) no-repeat
+    &_descr
+        margin-top: 25px
+        color: #1CA8C3
+        font-size: 17px
+        font-weight: 300
+        line-height: 24px
+    .warning
+        .require_title
+            color: $red-color
+        .require_list
+            li
+                &::before
+                    background: url('../icons/checkMarkRed.svg') center (center / cover) no-repeat
+//===== Six section - Around The World =====
