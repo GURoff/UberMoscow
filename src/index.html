@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Uber</title>
+    <title>Uber Moscow</title>
     <!-- Connect fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -15,12 +15,14 @@
     <!-- Connect styles -->
     <link rel="stylesheet" href="css/bootstrap-reboot.min.css" />
     <link rel="stylesheet" href="css/bootstrap-grid.min.css" />
+    <!-- Connect icons -->
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
       integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
       crossorigin="anonymous"
     />
+    <!-- Connect min.css -->
     <link rel="stylesheet" href="css/style.min.css" />
   </head>
   <body>
@@ -50,12 +52,18 @@
             </li>
           </ul>
         </div>
+        <!-- Button menu for mobile devices -->
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
       </nav>
       <!--===== Subheader =====-->
       <div class="subheader">
         <div class="container">
           <div class="row">
-            <div class="col-md-4 offset-md-1">
+            <div class="col-6 col-md-4 offset-md-1">
               <a href="#" class="subheader_logo"
                 ><img src="icons/Uber.png" alt="logo_uber"
               /></a>
@@ -63,13 +71,16 @@
                 Official partner of Uber in Moscow
               </div>
             </div>
-            <div class="col-md-2 offset-md-2">
+            <div class="xs-hidden col-md-3 offset-md-1 col-xl-3 offset-xl-2">
               <div class="subheader_call">Call us daily</div>
-              <a href="tel:+420xxxxxxxxx" class="subheader_phone"
-                >+420 xxx-xxx-xxx</a
-              >
+              <a href="tel:+420xxxxxxxxx" class="subheader_phone">
+                +420 xxx-xxx-xxx
+              </a>
             </div>
-            <div class="col-md-2">
+            <div class="col-6 col-md-3 col-lg-2">
+              <a href="tel:+420xxxxxxxxx" class="xs-visible subheader_phone">
+                +420 xxx-xxx-xxx
+              </a>
               <button class="subheader_btn">Request a call</button>
             </div>
           </div>
@@ -80,7 +91,7 @@
     <section class="promo">
       <div class="container">
         <div class="row">
-          <div class="col-md-10 offset-md-1">
+          <div class="col-md-12 offset-md-0 col-lg-10 offset-lg-1">
             <h1 class="promo_header">UBER PARTNERS COMPANY!</h1>
             <h2 class="promo_subheader">WE INVITE DRIVERS! IN YOUR CAR!</h2>
             <div class="promo_descr">
@@ -168,7 +179,7 @@
             </div>
           </div>
           <!-- second collumn -->
-          <div class="col-6 col-md-6">
+          <div class="col-md-6">
             <div class="reasons_block">
               <div class="reasons_round">
                 <img src="icons/table_Rectangle.png" alt="table_logo" />
@@ -435,5 +446,6 @@
         </div>
       </div>
     </footer>
+    <script src="js/menuMobile.js"></script>
   </body>
 </html>

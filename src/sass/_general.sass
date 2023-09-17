@@ -1,0 +1,430 @@
+// =====Main section=====
+header
+    position: relative
+    height: 53px
+
+nav
+    position: fixed
+    width: 100%
+    height: 53px
+    background-color: #212121
+    z-index: 5
+
+.hamburger
+    display: none
+
+a
+    text-decoration: none
+
+/* =====Header section=====
+.menu
+    display: flex
+    justify-content: space-between
+    padding: 15px 70px
+    margin: 0
+    list-style-type: none
+    &_link
+        color: #FFF
+        font-size: 15px
+        font-weight: 300
+    &_item
+        border-right: 1px dashed #000
+        padding-right: 35px
+        &:last-child
+            border-right: none
+
+/* =====Subheader section=====
+.subheader
+    position: absolute
+    top: 53px
+    width: 100%
+    height: 87px
+    background-color: rgba(0, 0, 0, 0.6)
+    &_logo
+        display: block
+        max-width: 100%
+        margin-top: 16px
+    &_official
+        margin-top: 6px
+        color: #FFF
+        font-size: 13px
+        font-weight: 100
+    &_call
+        margin-top: 19px
+        color: #FFF
+        text-align: right
+        font-size: 12px
+        font-weight: 300
+    &_phone
+        display: block
+        margin-top: 8px
+        color: #FFF
+        text-align: right
+        font-size: 22px
+        font-weight: 400
+        line-height: 12px
+        text-transform: uppercase
+    &_btn
+        margin-top: 18px
+        width: 172px
+        height: 46px
+        border: none
+        border-radius: 4px
+        background: linear-gradient(0deg, #1EACC7 0%, #4CE2FF 100%)
+        box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.12) inset
+        color: #FFF
+        text-align: center
+        text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21)
+        font-size: 14px
+        font-weight: 400
+        text-transform: uppercase
+        +btn_hover
+// Visibility for phone number on large devices
+.xs-visible
+    display: none
+
+/* ===== First section - Uber partners company =====
+.promo
+    min-height: 800px
+    background: url('../img/bg/uber_bg.png') center (center / cover) no-repeat
+    padding: 155px 0 185px 0
+    &_header
+        margin: 0
+        color: #FFF
+        text-align: center
+        font-size: 60px
+        font-weight: 900
+        text-transform: uppercase
+        line-height: 60px
+    &_subheader
+        margin: 0
+        margin-top: 22px
+        color: #FFF
+        text-align: center
+        font-size: 36px
+        font-weight: 900
+        text-transform: uppercase
+        line-height: 36px
+    &_descr
+        margin-top: 16px
+        color: #FFF
+        text-align: center
+        font-size: 18px
+        font-weight: 400
+        line-height: 24px
+    &_btn
+        display: block
+        margin: 115px auto 0 auto
+        width: 259px
+        height: 63px
+        border: none
+        border-radius: 4px
+        background: linear-gradient(0deg, #1EACC7 0%, #4CE2FF 100%)
+        box-shadow: 0px -4px 0px 0px rgba(0, 0, 0, 0.12) inset
+        color: #FFF
+        text-align: center
+        text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21)
+        font-size: 18px
+        font-weight: 400
+        text-transform: uppercase
+        +btn_hover
+
+/* ===== Second section - Eight reasons =====
+.reasons
+    min-height: 767px
+    background: #FFF
+    padding: 18px 0 64px 0
+    &_round
+        display: flex
+        justify-content: center
+        align-items: center
+        margin-right: 25px
+        width: 116px
+        height: 116px
+        border-radius: 100%
+        background: #1EACC7
+    &_block
+        display: flex
+        justify-content: center
+        align-items: center
+        margin-top: 26px
+    &_subtitle
+        line-height: 21px
+        color: #1eacc7
+        font-size: 17px
+        font-weight: 400
+    &_descr
+        width: 371px
+    &_text
+        font-size: 15px
+        font-weight: 300
+        line-height: 21px
+.label
+    position: relative
+    margin: 0 auto
+    height: 24px
+    width: 112px
+    padding: 5px 12px
+    background-color: #000000
+    color: #ffffff
+    font-size: 11px
+    font-weight: 300
+    text-transform: uppercase
+    text-align: center
+    z-index: 2
+    cursor: pointer
+    &_white
+        background-color: #fff
+        color: #000
+
+.title
+    position: relative
+    margin-bottom: 0
+    margin-top: 30px
+    color: #222222
+    font-size: 38px
+    line-height: 38px
+    font-weight: 700
+    text-transform: uppercase
+    text-align: center
+    z-index: 2
+    &_white
+        color: #fff
+
+.subtitle
+    position: relative
+    margin-top: 19px
+    color: #222222
+    font-size: 17px
+    font-weight: 400
+    text-align: center
+    z-index: 2
+    &_white
+        color: #fff
+
+/* ===== Third section - Uber Mobile App =====
+.mobile
+    min-height: 864px
+    padding: 48px 0 80px 0
+    background: url('../img/bg/mobile_bg.png') center (center / cover) no-repeat
+    .row
+        margin-top: 30px
+    &_item
+        position: relative
+        width: 320px
+        height: 280px
+        margin: 0 auto
+        margin-bottom: 19px
+        &_1
+            background: url(../img/cards/card1.png), lightgray 50% / cover no-repeat
+        &_2
+            background: url(../img/cards/card2.png), lightgray 50% / cover no-repeat
+        &_3
+            background: url(../img/cards/card3.png), lightgray 50% / cover no-repeat
+        &_4
+            background: url(../img/cards/card4.png), lightgray 50% / cover no-repeat
+        &_5
+            background: url(../img/cards/card5.png), lightgray 50% / cover no-repeat
+        &_6
+            background: url(../img/cards/card6.png), lightgray 50% / cover no-repeat
+        &_subtitle
+            padding-top: 88px
+            color: #ffffff
+            text-align: center
+            font-size: 24px
+            font-weight: 400
+            line-height: 31px
+            text-transform: uppercase
+        &_plus
+            display: flex
+            justify-content: center
+            align-items: center
+            position: absolute
+            bottom: 35px
+            left: 50%
+            transform: translateX(-50%)
+            width: 29px
+            height: 29px
+            margin: 0 auto
+            border-radius: 100%
+            background-color: #000000
+            cursor: pointer
+            &:before
+                content: ''
+                display: block
+                width: 14px
+                height: 2px
+                background-color: $main-color
+                transition: 0.3s all
+            &:after
+                content: ''
+                position: absolute
+                left: 50%
+                transform: translateX(-50%)
+                display: block
+                height: 14px
+                width: 2px
+                background-color: $main-color
+                transition: 0.3s all
+            &:hover
+                &:before, &:after
+                    background-color: $red-color
+
+/* ===== Fourth section - Choice is a great thing! =====
+.choice
+    position: relative
+    min-height: 895px
+    padding: 59px 0 138px 0
+    background: url('../img/bg/mobile_bg.png') center (center / cover) no-repeat
+    &_img
+        position: relative
+        display: block
+        margin: 56px auto 0 auto
+        z-index: 2
+    &_descr
+        text-align: center
+        color: #222222
+        font-size: 17px
+        font-weight: 300
+        line-height: 24px
+    &_black
+        position: absolute
+        top: 0
+        left: 0
+        height: 499px
+        width: 100%
+        background-color: #070716
+        z-index: 1
+
+//===== Fifth section - Conditions and requirements =====
+.require
+    padding: 68px 0 90px 0
+    &_block
+        margin: 33px 0
+        &_nmb
+            margin-bottom: 0px
+    &_title
+        color: #1CA8C3
+        font-size: 22px
+        font-weight: 400
+    &_list
+        list-style-type: none
+        padding-left: 50px
+        margin-top: 22px
+        li
+            position: relative
+            font-size: 17px
+            font-weight: 300
+            line-height: 24px
+            margin-bottom: 10px
+            &::before
+                content: ''
+                display: block
+                position: absolute
+                left: -32px
+                top: 3px
+                width: 21px
+                height: 20px
+                background: url('../icons/checkMarkblue.svg') center (center / cover) no-repeat
+    &_descr
+        margin-top: 25px
+        color: #1CA8C3
+        font-size: 17px
+        font-weight: 300
+        line-height: 24px
+    .warning
+        .require_title
+            color: $red-color
+        .require_list
+            li
+                &::before
+                    background: url('../icons/checkMarkRed.svg') center (center / cover) no-repeat
+
+//===== Six section - Around The World =====
+.world
+    position: relative
+    min-height: 716px
+    padding: 48px 0
+    background: url('../img/bg/world_bg.png') center (center / cover) no-repeat
+    &_link
+        position: absolute
+        color: #1FBAD6
+        font-size: 15px
+        font-weight: 400
+        text-transform: uppercase
+        text-align: center
+        left: 50%
+        bottom: 49px
+        transform: translateX(-50%)
+        &:hover
+            text-decoration: none
+            color: #fff
+
+//===== Fotter =====
+footer
+    padding: 14px 23px 39px 23px
+    a
+        &:hover
+            text-decoration: none
+.footer
+    &_divider
+        width: 299px
+        height: 4px
+        background-color: #1fbad6
+        margin: 0 auto
+        border-radius: 4px
+    &_wrapper
+        display: flex
+        justify-content: space-between
+        align-items: flex-start
+        padding-top: 32px
+    &_wrapper > div
+        width: 33%
+        &:nth-child(3)
+            display: flex
+            justify-content: flex-end
+    &_social
+        width: 160px
+        display: flex
+        justify-content: space-between
+        &_item
+            display: flex
+            justify-content: center
+            align-items: center
+            margin: 0 4px
+            width: 32px
+            height: 32px
+            background-color: #070716
+            border-radius: 100%
+            i
+                color: #fff
+    &_links
+        width: 390px
+        margin: 0 auto
+        &_main
+            display: flex
+            justify-content: space-between
+            padding: 0 10px
+            a
+                color: #070716
+                font-size: 15px
+                font-weight: 300
+                text-transform: uppercase
+        &_sub
+            display: flex
+            justify-content: space-between
+            margin-top: 10px
+            a
+                color: #999999
+                font-size: 11px
+                font-weight: 300
+                text-transform: uppercase
+        &_lang
+            display: block
+            margin: 0 auto
+            color: #1fbad6
+            font-size: 11px
+            font-weight: 400
+            margin-top: 19px
+            text-transform: uppercase
+            text-align: center
