@@ -21,6 +21,22 @@
             &_subtitle
                 font-size: 22px
 
+    .footer
+        &_wrapper > div
+            width: 50%
+            &:nth-child(1)
+                width: 25%
+            &:nth-child(3)
+                width: 25%
+                display: flex
+                justify-content: flex-end
+        &_mobile
+            display: flex
+            a
+                margin: 0 3px
+                img
+                    width: 100%
+
 // for MEDIUM devices
 @media (max-width: 991px)
     .menu
@@ -62,8 +78,23 @@
                 font-size: 18px
                 line-height: 20px
     .choice
+        min-height: 800px
         &_img
             width: 100%
+
+    .footer
+        &_wrapper
+            flex-wrap: wrap
+        &_wrapper > div
+            width: 100%
+            display: flex
+            justify-content: center
+            margin-bottom: 20px
+            &:nth-child(1)
+                width: 100%
+            &:nth-child(3)
+                width: 100%
+                justify-content: center
 
 // for SMALL devices
 @media (max-width: 767px)
@@ -137,6 +168,8 @@
             font-size: 25px
     .reasons
         text-align: center
+    .mobile
+        padding: 30px 0
 
 // for XS devices
 @media (max-width: 575px)
@@ -199,6 +232,33 @@
         &_descr
             width: 100%
             margin-top: 27px
+    .mobile
+        padding: 28px 0 42px 0
+        .title
+            margin-top: 16px
+        .subtitle
+            margin-top: 9px
+            font-size: 14px
+            font-weight: 400
+            line-height: 21px
+        .row
+            margin-top: 21px
+        &_item
+            width: 290px
+            height: 254px
+            margin-top: 30px
+            &_subtitle
+                font-size: 18px
+                line-height: 31px
+            &_plus
+                bottom: 34px
+                &:hover
+                    &:before, &:after
+                        background-color: $red-color
+    .choice
+        min-height: 393px
+    .hidden-320
+        display: none
     .title
         font-size: 16px
         margin-top: 15px
